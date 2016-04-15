@@ -1,0 +1,17 @@
+Milestone 1.0.0
+#IDEA:0 Make jQuery and Bootstrap module always loaded, and uglyed
+#IDEA:1 ES6 Imports and Exports
+#IDEA:1 Build Bootstrap with flex box
+#IDEA:1 SCSS support
+#IDEA:3 SourceMap
+
+#TODO:0 Connect the webpack-dev-server
+#TODO:0 Make hot reload of VueJS components possible
+#TODO:1 Create components
+#TODO:2 Component - SearchBox
+#TODO:2 Component - Flights Panel
+#TODO:2 Component - Hotels Panel
+#TODO:2 Component - Fare Box
+#TODO:2 Component - Hotel Box
+#TODO:2 Component - Review Modal
+#TODO:2 Component - Review Banner -> Footer to show selected flight/hotel and total price
