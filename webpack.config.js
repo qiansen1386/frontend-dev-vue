@@ -1,42 +1,37 @@
-var path = require('path');
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+var path = require('path')
 
 var loaders = [
   {
-    "test": /\.js?$/,
-    "exclude": /node_modules/,
-    "loader": "babel",
-    "query": {
-      "presets": [
-        "es2015",
-        "stage-0"
+    'test': /\.js?$/,
+    'exclude': /node_modules/,
+    'loader': 'babel!eslint',
+    'query': {
+      'presets': [
+        'es2015',
+        'stage-2'
       ],
-      "plugins": []
+      'plugins': ['html']
     }
   },
   {
-    "test": /\.vue?$/,
-    "loader": "vue"
+    'test': /\.vue?$/,
+    'loader': 'vue!eslint'
   }
-];
+]
 
 module.exports = {
   devtool: 'eval-source-map',
-  entry: path.resolve('src', 'main.js'),
+  entry: path.resolve('./src/main.js'),
   output: {
-    path: path.resolve('build'),
-    filename: '[name].js',
-    publicPath: '/'
+    path: path.resolve(__dirname, 'build'),
+    filename: '[name].bundle.js',
+    chunkFilename: '[chunkhash].bundle.js'
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: path.resolve('src', 'index.tpl.html'),
-      inject: 'body',
-      filename: 'index.html'
-    })
-  ],
   module: {
     loaders: loaders
+  },
+  vue: {
+    sass: 'style!css!sass?indentedSyntax',
+    scss: 'style!css!sass'
   }
-};
+}
