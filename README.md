@@ -24,6 +24,7 @@ Misc
 * color-picker
 * duplicate-line-or-selection
 * editorconfig
+* elastic-tabstops
 * emmet
 * file-icons
 * git-plus
