@@ -39,7 +39,5 @@ Misc
 * minimap-find-and-replace
 * monokai #Plus OneDark theme
 * pigments
-* plantuml-preview
-* plantuml-viewer
 * standard-formatter
 * terminal-plus
