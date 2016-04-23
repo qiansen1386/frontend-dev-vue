@@ -41,3 +41,11 @@ Misc
 * pigments
 * standard-formatter
 * terminal-plus
+
+Run following command to install them all, That's right~ Baby~
+
+```shell
+apm install atom-beautify color-picker duplicate-line-or-selection editorconfig elastic-tabstops emmet file-icons  git-plus highlight-selected imdone-atom language-vue linter linter-eslint linter-sass-lint merge-conflicts minimap minimap-find-and-replace monokai pigments standard-formatter terminal-plus
+```
+
+> If you're a Windows User like me, try to find the installation folder of your atom, there should be a cli folder. Usually in `\%USERPROFILE%\AppData\Local\atom\app-1.×.×\resources\cli`. Then if you use babun/mintty, you can call `sh apm.sh install`. Have fun!
